@@ -495,7 +495,7 @@
                                 </p>                              
                             </div><!-- .text end -->
 
-                            <a href="contact-simple.html" class="btn btn-big">
+                            <a href="quote.html" class="btn btn-big">
                                 <span>get a quote</span>
                             </a>
                         </div><!-- .call-to-action end -->
@@ -616,5 +616,35 @@
         <script src="js/jquery.srcipts.min.js"></script><!-- modernizr, retina, stellar for parallax -->  
         <script src="js/jquery.dlmenu.min.js"></script><!-- for responsive menu -->
         <script src="js/include.js"></script><!-- custom js functions -->
+        
+        <script src="https://embed.elromco.com/integration.js" data-moveboard-company-id="26"></script>
+		<style>
+			a[href="/v1/account"] {
+				display: none !important;
+			}
+			a[href="/v1/quote"] svg {
+				color: #fff !important;
+			}
+			div[role="tooltip"][x-placement="top"],div[role="tooltip"][x-placement="bottom"] {
+				display: none !important;
+			}
+			.el-short_form_quote_button, .el-long_form_quote_button {
+				border-radius: 0 !important;
+				padding: 5px 10px !important;
+				display: flex!important;
+				background-color: #fac312 !important;
+				justify-content: flex-start !important;
+			}			
+			.el-short_form_quote_button:after, .el-long_form_quote_button:after {
+				content: "Get a quote";
+				color: #fff;
+			}
+			
+			.el-short_form_quote_button > span, .el-long_form_quote_button > span {
+				display: inline-block !important;
+				width: auto !important;
+			}
+		</style>
+        
     </body>
 </html>
