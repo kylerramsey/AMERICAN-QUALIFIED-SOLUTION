@@ -824,7 +824,7 @@
 				display: none !important;
 			}
 			a[href="/v1/quote"] svg {
-				display: none !important;
+				color: #fff !important;
 			}
 			div[role="tooltip"][x-placement="top"] {
 				display: none !important;
@@ -832,12 +832,18 @@
 			.el-short_form_quote_button, .el-long_form_quote_button {
 				border-radius: 0 !important;
 				padding: 5px 10px !important;
-				display: inline-block !important;
-			}
-			
+				display: flex!important;
+				background-color: #fac312 !important;
+				justify-content: flex-start !important;
+			}			
 			.el-short_form_quote_button:after, .el-long_form_quote_button:after {
 				content: "Get a quote";
 				color: #fff;
+			}
+			
+			.el-short_form_quote_button > span, .el-long_form_quote_button > span {
+				display: inline-block !important;
+				width: auto !important;
 			}
 		</style>
         
