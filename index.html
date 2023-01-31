@@ -817,5 +817,29 @@
             });
             /* ]]> */
         </script>
+        
+        <script src="https://embed.elromco.com/integration.js" data-moveboard-company-id="26"></script>
+		<style>
+			a[href="/v1/account"] {
+				display: none !important;
+			}
+			a[href="/v1/quote"] svg {
+				display: none !important;
+			}
+			div[role="tooltip"][x-placement="top"] {
+				display: none !important;
+			}
+			.el-short_form_quote_button, .el-long_form_quote_button {
+				border-radius: 0 !important;
+				padding: 5px 10px !important;
+				display: inline-block !important;
+			}
+			
+			.el-short_form_quote_button:after, .el-long_form_quote_button:after {
+				content: "Get a quote";
+				color: #fff;
+			}
+		</style>
+        
     </body>
 </html>
